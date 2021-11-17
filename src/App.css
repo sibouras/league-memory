@@ -1,38 +1,55 @@
-.App {
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  font-size: clamp(0.95rem, 0.8375rem + 0.5vw, 1.1rem);
   text-align: center;
+  background-color: hsl(215, 21%, 11%);
+  color: #fff;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App {
+  max-width: 900px;
+  margin: 1rem auto;
+  padding: 0 1rem;
+}
+button {
+  background: none;
+  border: 2px solid #fff;
+  padding: 6px 12px;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  font-size: inherit;
+  text-transform: capitalize;
+}
+button:hover {
+  background: hsl(168, 16%, 33%);
+  color: #fff;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1 {
+  font-size: clamp(1.95rem, 1.5825rem + 1.6333vw, 2.44rem);
+  margin-top: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.card-grid {
+  margin-top: 2rem;
+  display: grid;
+  grid-gap: 1rem;
+  place-content: center;
+}
+
+header {
   display: flex;
-  flex-direction: column;
+  justify-content: space-evenly;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+select {
+  border: none;
+  padding: 5px 5px;
+  font-size: inherit;
+  background-color: hsl(168, 16%, 33%);
+  color: #fff;
+  text-transform: capitalize;
 }
