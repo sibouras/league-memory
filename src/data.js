@@ -5,7 +5,7 @@ const level1 = [
   { src: 'img/Jayce.png', matched: false },
   { src: 'img/Heimerdinger.png', matched: false },
   { src: 'img/Vi.png', matched: false },
-];
+]
 
 const level2 = [
   { src: 'img/Ekko.png', matched: false },
@@ -16,7 +16,7 @@ const level2 = [
   { src: 'img/Katarina.png', matched: false },
   { src: 'img/Qiyana.png', matched: false },
   { src: 'img/Thresh.png', matched: false },
-];
+]
 
 const level3 = [
   { src: 'img/Zoe.png', matched: false },
@@ -29,7 +29,7 @@ const level3 = [
   { src: 'img/Taliyah.png', matched: false },
   { src: 'img/Pyke.png', matched: false },
   { src: 'img/Ivern.png', matched: false },
-];
+]
 
 const level4 = [
   { src: 'img/Viego.png', matched: false },
@@ -44,6 +44,6 @@ const level4 = [
   { src: 'img/Viktor.png', matched: false },
   { src: 'img/Ekko.png', matched: false },
   { src: 'img/Heimerdinger.png', matched: false },
-];
+]
 
-export { level1, level2, level3, level4 };
+export { level1, level2, level3, level4 }
