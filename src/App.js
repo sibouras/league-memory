@@ -11,6 +11,16 @@ const shuffle = (arr) => {
   return arr;
 };
 
+const getLevel = (level) => {
+  return level === '2'
+    ? level2
+    : level === '3'
+    ? level3
+    : level === '4'
+    ? level4
+    : level1;
+};
+
 function App() {
   const [cards, setCards] = useState([]);
   const [turns, setTurns] = useState(0);
@@ -20,18 +30,8 @@ function App() {
   const [level, setLevel] = useState('1');
 
   useEffect(() => {
-    shuffleCards(getLevel());
+    shuffleCards(getLevel(level));
   }, [level]);
-
-  const getLevel = () => {
-    return level === '2'
-      ? level2
-      : level === '3'
-      ? level3
-      : level === '4'
-      ? level4
-      : level1;
-  };
 
   const shuffleCards = (level) => {
     const shuffledCards = shuffle([...level, ...level]).map((card) => ({
@@ -75,7 +75,7 @@ function App() {
     <div className="App">
       <h1>League Memory</h1>
       <header>
-        <button onClick={() => shuffleCards(getLevel())}>New Game</button>
+        <button onClick={() => shuffleCards(getLevel(level))}>New Game</button>
         <select value={level} onChange={(e) => setLevel(e.target.value)}>
           <option value="1">level 1</option>
           <option value="2">level 2</option>
